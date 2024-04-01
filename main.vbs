@@ -2,7 +2,7 @@ Function GetInput()
     Dim userInput
     Dim scriptPath
 
-    userInput = InputBox("1. FPS UNLOCKER" & vbCrLf & "2. MODTOOLS" & vbCrLf & "3. LOAD SAVED SETTINGS" & vbCrLf & "INFO. INFORMATION", "Roblox Modtools")
+    userInput = InputBox("1. FPS UNLOCKER" & vbCrLf & "2. MODTOOLS" & vbCrLf & "INFO. INFORMATION", "Roblox Modtools")
 
     ' Convert user input to uppercase for case-insensitive comparison
     userInput = UCase(userInput)
@@ -13,8 +13,6 @@ Function GetInput()
             scriptPath = "fps_unlocker.vbs"
         Case "2"
             scriptPath = "modtools.bat"
-        Case "3"
-            scriptPath = "load_settings.vbs"
         Case "INFO"
             scriptPath = "info.txt"
         Case Else
